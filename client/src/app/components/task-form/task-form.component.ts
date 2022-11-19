@@ -21,25 +21,6 @@ export class TaskFormComponent implements OnInit {
 
   ngOnInit(): void {
 
-    const params = this.activatedRoute.snapshot.params;
-    console.log(params);
-    
-
-    if (params['id']) {
-    this.taskService.getTarea(params['id']).subscribe(
-    res => {
-     console.log(res);
-     
-          
-      },
-      err => console.error(err)
-        
-
-     )
-      
-    }
-
-
   }
 
   saveNewTask(){
@@ -56,9 +37,16 @@ export class TaskFormComponent implements OnInit {
   }
 
   
-
-
+  
+    
+   
+  
+    
 
   }
+
+
+
+  
 
 

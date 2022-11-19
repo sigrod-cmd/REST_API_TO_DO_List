@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { tarea } from 'src/app/models/task';
 import { TaskService } from '../../services/task.service';
 
@@ -11,7 +12,7 @@ export class TaskListComponent implements OnInit {
   
   tareas : any  = [];
 
-  constructor(private taskService: TaskService) { }
+  constructor(private taskService: TaskService, router: Router) { }
 
   ngOnInit(): void {
     this.getTareas();
@@ -39,6 +40,9 @@ export class TaskListComponent implements OnInit {
  
   }
 
+  
 
+  
+  
 
 }
