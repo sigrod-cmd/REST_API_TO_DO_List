@@ -1,0 +1,33 @@
+<div class="row  ">
+    <div class="col-md-4 offset-md-4 bg-light ">
+        <div class="card-body ">
+            <form>
+                <br>
+                <div class="form-group bg-light">
+                    <textarea name="Descripcion" [(ngModel)]="tarea.Descripcion" placeholder="Descripcion" cols="30" rows="5" class="form-control" autofocus></textarea>
+                </div>
+                <br>
+                <div class="form-group bg-light">
+                <input type="text" name="Estado" [(ngModel)]="tarea.Estado" placeholder="Estado" class="form-control" >
+                </div>
+                <br>
+                <div class="form-group bg-light">
+                    <input type="text" name="Contenido"  [(ngModel)]="tarea.Contenido" placeholder="Imagen Url" class="form-control">
+                    <br>
+                    <input type="file" name="Contenido"  [(ngModel)]="tarea.Contenido" placeholder="" class="form-control">
+                </div>
+                <br>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-success" type="button" (click)="saveNewTask()">
+                    Guardar
+                    </button>
+                    <br>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+  
+</div>
+
+

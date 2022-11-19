@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let tareas of tareas">
+        <div class="card text-center">
+            <div class="card-header bg-dark text-white d-flex justify-content-between aling-item-center">
+                <p>{{tareas.Estado}}</p>
+                <button class="btn btn-danger" (click)="deleteTarea(tareas.Id)">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
+            <div>
+                <img [src]="tareas.Contenido" class="card-img-top" >
+            </div>
+            
+            <div class="card-body">
+                <span>{{tareas.Id}}.-</span>
+                <span>{{tareas.Descripcion}}</span>
+                <br>
+                <a [routerLink]="['/tareas/edit', tareas.Id]" class="btn btn-info btn-block">editar tarea</a>
+            </div>
+        </div>
+    </div>
+</div>
+

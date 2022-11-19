@@ -6,17 +6,17 @@ CREATE TABLE tareas (
     Id INT(11) not null auto_increment,
     Descripcion VARCHAR (200),
     Estado VARCHAR (50),
-    Contenido LongBlob,
-    primary key (Id)
+    Contenido VARCHAR(300),
+    primary key (Id),
 );
 
 describe tareas;
 
-INSERT INTO tareas (Id, Descripcion, Estado)
+INSERT INTO tareas (Id, Descripcion, Estado, Contenido)
 
 VALUES
-(1, 'Ir al super', 'Pendiente'),
-(2, 'lavar', 'Pendiente'),
-(3, 'combustible', 'Pendiente'),
-(4, 'dormir', 'Pendiente'),
-(5, 'trabajar', 'Pendiente');
+(1, 'Ir al super', 'Pendiente', ''),
+(2, 'lavar', 'Pendiente', ''),
+(3, 'combustible', 'Pendiente',''),
+(4, 'dormir', 'Pendiente',''),
+(5, 'trabajar', 'Pendiente','');
