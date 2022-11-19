@@ -9,7 +9,7 @@ import { tarea } from '../models/task';
   providedIn: 'root'
 })
 export class TaskService {
-  API_URI = 'http://localhost:3306/api';
+  API_URI = 'https://restapitodolist-production.up.railway.app/api';
   
   constructor(private http: HttpClient) {}
 
